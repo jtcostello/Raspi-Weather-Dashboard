@@ -1,0 +1,112 @@
+<html>
+<head>
+	<title> Raspi Weather Graph </title>
+	<style rel="stylesheet" type="text/css">
+		body {
+		  margin: 0 auto;
+		  padding: 0;
+		}
+		#div-10day {
+		    width    : 100%;
+		    height   : 400px;
+		    overflow : hidden;
+		    position : relative;
+		}
+		 
+		#iframe-10day {
+		    position : absolute;
+		    top      : -320px;    /* Set scroll position */
+		    left     : 0px;
+		    width    : 110%;
+		    height   : 860px;     /* Set how tall the frame is */
+		}
+
+		#div-1day {
+		    width    : 100%;
+		    height   : 800px;
+		    overflow : hidden;
+		    position : relative;
+		}
+		 
+		#iframe-1day {
+		    position : absolute;
+		    top      : -620px;    /* Set scroll position */
+		    left     : 0px;
+		    width    : 110%;
+		    height   : 200%;     /* Set how tall the frame is */
+		}
+    </style>
+</head>
+
+
+
+<META http-equiv="refresh" content="1000"> <!-- Set refresh rate (sec) -->
+<body>
+	
+	<!--div id=div-1day>
+		<iframe id="frame-1day"
+		    width="100%"
+		    height="100%"
+		    frameborder="0"
+		    scrolling="no"
+		    marginheight="0"
+		    marginwidth="0"
+		    margin="0"
+		    allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
+		    src="https://www.wunderground.com/weather/us/mi/ann-arbor/48103?cm_ven=localwx_today">
+		</iframe>
+	</div-->
+	<div id="div-10day">
+		<iframe id="iframe-10day"
+		    width="100%"
+		    height="100%"
+		    frameborder="0"
+		    scrolling="no"
+		    marginheight="0"
+		    marginwidth="0"
+		    margin="0"
+		    allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
+		    src="https://www.wunderground.com/forecast/us/mi/ann-arbor/48103?cm_ven=localwx_10day">
+		</iframe>
+	</div>
+	<br>
+	<div id="div-1day">
+		<iframe id="iframe-1day"
+		    width="100%"
+		    height="100%"
+		    frameborder="0"
+		    scrolling="no"
+		    marginheight="0"
+		    marginwidth="0"
+		    margin="0"
+		    allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
+		    src="https://www.wunderground.com/hourly/us/mi/ann-arbor/48103?cm_ven=localwx_hour">
+		</iframe>
+	</div>
+</body>
+
+</html>
+
+
+<!--
+
+screenly could also work: https://www.screenly.io/ose/
+ 
+
+how to "scroll" the page: http://www.stoimen.com/blog/2011/03/29/scroll-an-iframe-content-to-a-predefined-position/
+
+
+10 day weather:
+https://www.wunderground.com/forecast/us/mi/ann-arbor/48103?cm_ven=localwx_10day
+
+Single day weather:
+https://www.wunderground.com/hourly/us/mi/ann-arbor/48103?cm_ven=localwx_hour
+
+-->
+
+
+
+
+
+
+
